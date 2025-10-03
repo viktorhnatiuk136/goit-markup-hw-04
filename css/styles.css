@@ -7,7 +7,8 @@ line-height: 1.5;
 letter-spacing: 2%;
 }
 
-section {padding: 120px 0;}
+section {padding: 120px 0;
+}
 
 .container {
     width: 1158px;
@@ -28,11 +29,11 @@ a {text-decoration: none;
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-}
+    }
 
 .header .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -53,6 +54,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 padding-top: 24px;
 padding-bottom: 24px;
+padding-right: 76px;
 }
 .logo-span {color: #2e2f42;}
 
@@ -73,6 +75,7 @@ display: block;}
 
 .address {
     font-style: normal;
+    margin-left: auto;
 }
 
 .address-link {
@@ -92,7 +95,17 @@ display: block;}
 }
 
 .title {background-color: #2e2f42;
-        padding: 188px 0;}
+        padding: 188px 0;
+background-image: linear-gradient(rgba(46,
+    47,
+    66,
+    0.7)),
+url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
 
 .title-text {
     color: #ffffff;
@@ -124,6 +137,8 @@ margin: 0 auto;
 
 .button:hover, .button:focus {background-color: #404bbf;}
 
+/* css from sec 2 feature */
+
 .feature h2 {
     position: absolute;
     width: 1px;
@@ -138,10 +153,28 @@ margin: 0 auto;
 }
 
 .feature-ul {display: flex;
-gap: 24px;}
+gap: 24px;
+justify-content: space-between;
+}
+
+.feature-icon>svg {width: 64px;
+height: 64px;}
+
+.feature-icon {display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+background-color: #F4F4FD;
+margin-bottom: 8px;
+;}
 
 .feature-items {width: calc((100% - 72px) / 4);
 }
+
+/* css from section team */
 
 .team {background-color: #f4f4fd;}
 
@@ -167,6 +200,18 @@ border-radius: 0 0 4px 4px;}
     text-align: center;
     padding: 32px 0;
 }
+
+.icon-social>svg {height: 40px;
+width: 40px;
+display: block;
+overflow: visible;}
+
+.icon-social {display: inline-flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+/* css from section portfolio */
 
 .portfolio-ul {display: flex;
 flex-wrap: wrap;
