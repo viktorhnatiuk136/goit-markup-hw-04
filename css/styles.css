@@ -77,6 +77,7 @@ display: block;}
 .current {
     position: relative;
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -88,8 +89,7 @@ display: block;}
     bottom: -1px;
     background-color: #404bbf;
     border-radius: 2px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 
 .address {
     font-style: normal;
@@ -114,14 +114,13 @@ display: block;}
 }
 
 .title {
-    background-image: linear-gradient(rgba(46,
-    47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-url(../images/people-office\ 1.jpg);
-max-width: 1440px;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 188px 0;
 }
 
 .title-text {
@@ -186,11 +185,6 @@ justify-content: space-between;
     margin-bottom: 8px;
 ;}
 
-.feature-icon svg {
-    width: 64px;
-    height: 64px;
-}
-
 .feature-items {width: calc((100% - 72px) / 4);
 }
 
@@ -219,7 +213,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .team-descr {
     text-align: center;
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .section-prof {color: #434455;
@@ -231,20 +225,27 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 .icon-social {display: flex;
-justify-content: space-between;}
+    justify-content: center;
+    gap: 24px;    
+}
+
+.link-social-items {
+    width: 40px;
+    height: 40px;
+}
 
 .link-social-icon {display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4D5AE5;
-width: 40px;
-height: 40px;
-border-radius: 50%;}
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.icon {
-    width: 16px;
-    height: 16px;
-    fill: #ffffff;}
+.link-social-icon:hover,
+.link-social-icon:focus {background-color: #404bbf;}
 
 /* css from section portfolio */
 
