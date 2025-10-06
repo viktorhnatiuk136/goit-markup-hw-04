@@ -34,7 +34,6 @@ a {text-decoration: none;
    
 .header .container {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     }
 
@@ -58,8 +57,6 @@ padding-bottom: 24px;
 padding-right: 76px;
 }
 .logo-span {color: #2e2f42;}
-
-.header .logo {margin-right: 76px;}
 
 .link {
     color: #2e2f42;
@@ -117,6 +114,7 @@ display: block;}
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
     max-width: 1440px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -270,7 +268,7 @@ row-gap: 48px;
     overflow: hidden;
 }
 
-.portfolio-img:hover .decor{
+.portfolio-items:hover .decor{
     transform: translateY(0%);
 }
 
